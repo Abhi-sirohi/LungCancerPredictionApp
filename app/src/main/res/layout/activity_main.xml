@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="com.abhinaysirohi.lungcancerprediction.MainActivity"
     android:orientation="vertical">
 
     <TextView
@@ -15,6 +15,15 @@
         android:layout_margin="10dp"
         android:textSize="20sp"
         android:textStyle="bold"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,7 +46,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/cp"
+                android:id="@+id/ed1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter your Age"
@@ -81,10 +90,10 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/thalach"
+                android:id="@+id/ed2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="1 for Male &amp; 0 for Female"
+                android:hint="1 for Male &amp; 2 for Female"
                 android:inputType="number"
                 android:maxLength="1"
                 android:textSize="16sp"
@@ -126,7 +135,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/slope"
+                android:id="@+id/ed3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter between 1 to 10"
@@ -170,7 +179,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/restecg"
+                android:id="@+id/ed4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter between 1 to 10"
@@ -213,7 +222,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/chol"
+                android:id="@+id/ed5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
@@ -257,7 +266,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/trestbps"
+                android:id="@+id/ed6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter between 1 to 10"
@@ -287,7 +296,7 @@
         <TextView
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:text="chronic Lung Disease"
+            android:text="Genetic Risk"
             android:textStyle="bold"
             android:textSize="16sp"
             android:layout_marginStart="10dp"
@@ -300,7 +309,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/fbs"
+                android:id="@+id/ed7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
@@ -333,7 +342,7 @@
         <TextView
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:text="Balanced Diet"
+            android:text="Chronic Lung Disease"
             android:textStyle="bold"
             android:textSize="16sp"
             android:layout_marginStart="10dp"
@@ -346,7 +355,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/oldpeak"
+                android:id="@+id/ed8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter between 1 to 10"
@@ -391,7 +400,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/et9"
+                android:id="@+id/ed9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter between 1 to 10"
@@ -423,7 +432,7 @@
         <TextView
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:text="Balanced Diet"
+            android:text="Obesity"
             android:textStyle="bold"
             android:textSize="16sp"
             android:layout_marginStart="10dp"
@@ -436,7 +445,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/et10"
+                android:id="@+id/ed10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter between 1 to 10"
@@ -468,7 +477,7 @@
         <TextView
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:text="Balanced Diet"
+            android:text="Smoking"
             android:textStyle="bold"
             android:textSize="16sp"
             android:layout_marginStart="10dp"
@@ -481,7 +490,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/oldpeak"
+                android:id="@+id/ed11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter between 1 to 10"
@@ -490,12 +499,12 @@
                 android:textSize="16sp"
                 android:layout_marginEnd="20dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/info8"
+                app:layout_constraintEnd_toStartOf="@+id/info11"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:id="@+id/info8"
+                android:id="@+id/info11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_info"
@@ -513,7 +522,7 @@
         <TextView
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:text="Balanced Diet"
+            android:text="Passive Smoker"
             android:textStyle="bold"
             android:textSize="16sp"
             android:layout_marginStart="10dp"
@@ -526,7 +535,7 @@
             android:layout_marginEnd="10dp">
 
             <EditText
-                android:id="@+id/oldpeak"
+                android:id="@+id/ed12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter between 1 to 10"
@@ -535,12 +544,507 @@
                 android:textSize="16sp"
                 android:layout_marginEnd="20dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/info8"
+                app:layout_constraintEnd_toStartOf="@+id/info12"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:id="@+id/info8"
+                android:id="@+id/info12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Chest Pain"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Coughing of Blood"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Fatigue"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Weight Loss"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Shortness of Breath"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Wheezing"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Swallowing Difficulty"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Clubbing of Finger Nails"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Clubbing of Finger Nails"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Clubbing of Finger Nails"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_info"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Clubbing of Finger Nails"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/ed23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter between 1 to 10"
+                android:maxLength="2"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/info23"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/info23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_info"
@@ -582,6 +1086,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result" />
-
+    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
